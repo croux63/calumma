@@ -1,0 +1,32 @@
+.calumma-tab
+{
+font-size:0.9em;
+  display:inline-block;
+  margin-left:1px;
+  margin-right:1px;
+  padding:3px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border:1px solid #23282D;
+  cursor:pointer;
+}
+.calumma-tab-back
+{
+  color:#eeeeee;
+  background-color:#23282D;
+  border-bottom:1px solid #23282D;
+}
+.calumma-tab-front
+{
+  background-color:#ffffff;
+  color:#23282D;
+  border-bottom-style:none;
+  padding-bottom:5px;
+}
+.calumma-tab-content
+{
+  margin-top:-1px;
+  border-top:1px solid #23282D;
+  padding:5px;
+  display:none;
+}
