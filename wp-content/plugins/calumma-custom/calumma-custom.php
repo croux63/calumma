@@ -860,8 +860,7 @@ class wp_calumma {
     fwrite($fp,$css);
     fclose($fp);
     $this->style["other"]["replace-fonts"] = "";
-    $default = $this->style;
-    $this->style = update_option('calumma',$default);
+    update_option('calumma',$this->style);
     $this->set_googlefonts();
     return '<p style="color:green;"><strong>'.esc_html__('Style saved','calumma-custom').'</strong></p>';
   }
