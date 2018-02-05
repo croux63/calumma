@@ -153,7 +153,13 @@ require get_template_directory() . '/inc/jetpack.php';
 
 function calumma_googlefonts()
 {
-  $strgf = file_get_contents(get_template_directory()."/googlefonts.dat");
+  global $wp_filesystem;
+
+  if (empty($wp_filesystem)) {
+    require_once (ABSPATH . '/wp-admin/includes/file.php');
+    WP_Filesystem();
+  }
+  $strgf = $wp_filesystem->get_contents(get_template_directory()."/googlefonts.dat");
   $tabgf = explode("\n",$strgf);
   foreach($tabgf as $url)
   {
