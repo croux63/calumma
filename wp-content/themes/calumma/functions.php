@@ -153,12 +153,12 @@ require get_template_directory() . '/inc/jetpack.php';
 
 function calumma_googlefonts()
 {
-  $fp = fopen(get_template_directory()."/googlefonts.dat","r");
-  while (($url = fgets($fp)) !== false)
+  $strgf = file_get_contents(get_template_directory()."/googlefonts.dat");
+  $tabgf = explode("\n",$strgf);
+  foreach($tabgf as $url)
   {
-    echo "<link href='".str_replace("\n",'',$url)."' rel='stylesheet' type='text/css'>\n";
+    echo "<link href='".$url."' rel='stylesheet' type='text/css'>\n";
   }
-  fclose($fp);
 }
 
 function calumma_add_css()
