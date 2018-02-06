@@ -3,7 +3,7 @@
   Plugin Name: Calumma Custom
   Plugin URI: http://christophe-roux.me/calumma/
   Description: Calumma customization
-  Version 0.1
+  Version: 1.0.0
   Author: Christophe Roux
   Author URI: http://christophe-roux.me/
   License:     GPL2
