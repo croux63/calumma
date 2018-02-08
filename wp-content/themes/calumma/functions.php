@@ -161,9 +161,11 @@ function calumma_googlefonts()
   }
   $strgf = $wp_filesystem->get_contents(get_template_directory()."/googlefonts.dat");
   $tabgf = explode("\n",$strgf);
+  $i = 1;
   foreach($tabgf as $url)
   {
-    echo "<link href='".$url."' rel='stylesheet' type='text/css'>\n";
+    wp_enqueue_style('googlefont'.$i, $url, array(), null);
+    $i++;
   }
 }
 
@@ -173,7 +175,7 @@ function calumma_add_css()
   wp_enqueue_style( 'calumma-custom', get_template_directory_uri() . '/calumma.css');
 }
 
-add_action('wp_head','calumma_googlefonts',1);
-add_action('wp_enqueue_scripts','calumma_add_css');
+add_action('wp_enqueue_scripts','calumma_googlefonts',1);
+add_action('wp_enqueue_scripts','calumma_add_css',20);
 
 
