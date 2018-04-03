@@ -1,6 +1,6 @@
-=== calumma ===
+=== Calumma ===
 
-Contributors: automattic
+Contributors: Christophe Roux, automattic
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.0
@@ -21,11 +21,26 @@ Hi. I'm a starter theme called calumma, or underscores, if you like. I'm a theme
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
+== Copyright ==
+
+Calumma WordPress Theme, Copyright 2018 Christophe-Roux.Me
+Calumma is distributed under the terms of the GNU GPL
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
 
-calumma includes support for Infinite Scroll in Jetpack.
+Calumma includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
