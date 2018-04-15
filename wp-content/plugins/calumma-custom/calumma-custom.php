@@ -3,7 +3,7 @@
   Plugin Name: Calumma Custom
   Plugin URI: http://christophe-roux.me/calumma/
   Description: Calumma customization
-  Version: 1.0.0
+  Version 1.0.1
   Author: Christophe Roux
   Author URI: http://christophe-roux.me/
   License:     GPL2
@@ -775,6 +775,7 @@ class wp_calumma {
     $css .='blockquote,q,var{font-style:italic;}';
     $css .='kbd,code,pre,tt,var{font-size:1em;}';
     $css .='.header-image img{width:100%;height:auto;}';
+    $css .='html .submit,html .search-submit,input,textarea{font-size:1em;}';
     $css .='.sticky h2:before{content:"\f308 ";font-family:Genericons;font-size:0.7em;margin-right:0.2em;}';
     $css .='.main-navigation{margin-left:-'.$this->style["other"]["mpadding"] * $this->style["other"]["mpadding"].'em;}'; 
     $css .='.main-navigation div{width:'.$this->style["other"]["mwidth"].';';
@@ -795,20 +796,34 @@ class wp_calumma {
     $css .='border-left: 1px solid '.$this->style["other"]["mborder-left-color"].';';
     $css .='background-color:'.$this->style["other"]["mbgcolor"].';}';
     $css .='.main-navigation .menu > li:hover{background-color:'.$this->style["other"]["mbgcolor-hover"].';}';
+    $css .='.main-navigation .nav-menu > li:hover{background-color:'.$this->style["other"]["mbgcolor-hover"].';}';
 
     $css .='.main-navigation .sub-menu a:link{color:'.$this->style["other"]["smcolor"].';}';
     $css .='.main-navigation .sub-menu a:visited{color:'.$this->style["other"]["smcolor"].';}';
     $css .='.main-navigation .sub-menu a:hover{color:'.$this->style["other"]["smcolor-hover"].';}';
     $css .='.main-navigation .sub-menu a:active{color:'.$this->style["other"]["smcolor"].';}';
-    $css .='.main-navigation .sub-menu{background-color:'.$this->style["other"]["smbgcolor"].';}';
+    $css .='.main-navigation .sub-menu {background-color:'.$this->style["other"]["smbgcolor"].';}';
     $css .='.main-navigation .sub-menu li:hover{background-color:'.$this->style["other"]["smbgcolor-hover"].';}';
-    $css .='.main-navigation ul ul{border: 1px solid:'.$this->style["other"]["smborder-color"].';';
+    $css .='.main-navigation .children a:link{color:'.$this->style["other"]["smcolor"].';}';
+    $css .='.main-navigation .children a:visited{color:'.$this->style["other"]["smcolor"].';}';
+    $css .='.main-navigation .children a:hover{color:'.$this->style["other"]["smcolor-hover"].';}';
+    $css .='.main-navigation .children a:active{color:'.$this->style["other"]["smcolor"].';}';
+    $css .='.main-navigation .children {background-color:'.$this->style["other"]["smbgcolor"].';}';
+    $css .='.main-navigation .children li:hover{background-color:'.$this->style["other"]["smbgcolor-hover"].';}';
+    $css .='.main-navigation ul ul{border: 1px solid '.$this->style["other"]["smborder-color"].';';
     $css .='box-shadow:'.$this->style["other"]["smshadow"].';}';
     $css .='.main-navigation .menu > li > ul{margin-top:'.$this->style["other"]["mpadding"] * 2 .'em;';
     $css .='margin-left:-'.$this->style["other"]["mpadding"].'em;}';
+    $css .='.main-navigation .nav-menu > li > ul{margin-top:'.$this->style["other"]["mpadding"] * 2 .'em;';
+    $css .='margin-left:-'.$this->style["other"]["mpadding"].'em;}';
     $css .='.main-navigation .sub-menu > li > ul{margin-top:-1px;';
     $css .='margin-left:1px;}';
+    $css .='.main-navigation .children > li > ul{margin-top:-1px;';
+    $css .='margin-left:1px;}';
     $css .='.main-navigation .menu > .menu-item-has-children > a:after{';
+    $css .='margin-left:0.7em;font-size:0.7em;vertical-align:middle;';
+    $css .='content: "\f502 ";font-family: Genericons;}';
+    $css .='.main-navigation .nav-menu > .page_item_has_children > a:after{';
     $css .='margin-left:0.7em;font-size:0.7em;vertical-align:middle;';
     $css .='content: "\f502 ";font-family: Genericons;}';
     $css .='.menu-toggle{text-shadow:none;box-shadow:none;border:none;border-radius:0;';
@@ -825,6 +840,9 @@ class wp_calumma {
     $css .='font-family:'.$this->style["other"]["font-family"].';}';
     $css .= '@media only screen and (min-width:'.$this->style["other"]["min-2col"].'px){';
     $css .='.main-navigation .sub-menu > .menu-item-has-children > a:after{';
+    $css .='font-size:0.7em;display:block;float:right;';
+    $css .='content: "\f501 ";font-family: Genericons;}';
+    $css .='.main-navigation .children > .page_item_has_children > a:after{';
     $css .='font-size:0.7em;display:block;float:right;';
     $css .='content: "\f501 ";font-family: Genericons;}';
     $css .= "}";

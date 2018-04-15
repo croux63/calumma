@@ -5,15 +5,15 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4.2
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-A starter theme called calumma, or underscores.
+A simple theme called calumma, based on underscores.
 
 == Description ==
 
-Hi. I'm a starter theme called calumma, or underscores, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Hi. I'm a customizable theme called calumma, based on underscores. You can customize me using the plugin Calumma custom.
 
 == Installation ==
 	
@@ -43,6 +43,9 @@ GNU General Public License for more details.
 Calumma includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.2 - Apr 15 2018 =
+* Corrections for wordpress.org final review 
 
 = 1.0.1 - Mar 3 2018 =
 * Corrections for wordpress.org review
