@@ -1215,6 +1215,10 @@ class wp_calumma {
       $this->print_font('tags-links');
       $this->print_link('tags-links');
       echo '<tr><td style="text-decoration:underline;">'
+           .esc_html__('comments-link').'</td><td>&nbsp;</td><td>&nbsp;</td></tr>';
+      $this->print_font('comments-link');
+      $this->print_link('comments-link');
+      echo '<tr><td style="text-decoration:underline;">'
            .esc_html__('edit-link').'</td><td>&nbsp;</td><td>&nbsp;</td></tr>';
       $this->print_font('edit-link');
       $this->print_link('edit-link');
