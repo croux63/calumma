@@ -90,7 +90,12 @@ if ( post_password_required() ) {
 	<?php
 	endif;
 
-	comment_form();
+	$comments_args = array(
+		'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
+		'title_reply_after'  => '</h2>' 
+	);
+
+	comment_form($comments_args);
 	?>
 
 </div><!-- #comments -->

@@ -5,7 +5,7 @@ Tags: translation-ready, custom-background, theme-options, custom-menu, post-for
 
 Requires at least: 4.0
 Tested up to: 4.4.2
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ GNU General Public License for more details.
 Calumma includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.4 - May 03 2018 =
+* Change h3 to h2 for the reply-title (wordpress.org review)
 
 = 1.0.3 - Apr 25 2018 =
 * Corrections for wordpress.org accessibility review
